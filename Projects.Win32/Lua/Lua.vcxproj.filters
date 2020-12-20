@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\iberbar\Lua\FunctionHelper.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Lua\LoggingHelper.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Lua\Callback.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Lua\Device.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Lua\CppBuilder.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Lua\CppInstantiate.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\iberbar\Lua\FunctionHelper.h" />
+    <ClInclude Include="..\..\Src\iberbar\Lua\LoggingHelper.h" />
+    <ClInclude Include="..\..\Src\iberbar\Lua\Callback.h" />
+    <ClInclude Include="..\..\Src\iberbar\Lua\Device.h" />
+    <ClInclude Include="..\..\Src\iberbar\Lua\Headers.h" />
+    <ClInclude Include="..\..\Src\iberbar\Lua\Error.h" />
+    <ClInclude Include="..\..\Src\iberbar\Lua\CppBuilder.h" />
+    <ClInclude Include="..\..\Src\iberbar\Lua\CppInstantiate.h" />
+    <ClInclude Include="..\..\Src\iberbar\Lua\CppInstantiateDef.h" />
+    <ClInclude Include="..\..\Src\iberbar\Lua\CppCommon.h" />
+  </ItemGroup>
+</Project>

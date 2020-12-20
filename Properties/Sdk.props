@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <sdk_lua>$(CppSdkEnv)\lua\5.3.5\windows\$(PlatformTarget)</sdk_lua>
+    <sdk_lua_include>$(sdk_lua)\include</sdk_lua_include>
+    <sdk_lua_lib>$(sdk_lua)\lib</sdk_lua_lib>
+    <sdk_lua_bin>$(sdk_lua)\bin</sdk_lua_bin>
+    <sdk_nlohmann_json>$(CppSdkEnv)\nlohmann\3.7.3</sdk_nlohmann_json>
+    <sdk_rapidxml>$(CppSdkEnv)\rapidxml-1.13</sdk_rapidxml>
+    <sdk_rapidxml_include>$(sdk_rapidxml)</sdk_rapidxml_include>
+    <sdk_curl>$(CppSdkEnv)\curl\windows\$(PlatformTarget)</sdk_curl>
+    <sdk_curl_include>$(sdk_curl)\include</sdk_curl_include>
+    <sdk_curl_lib>$(sdk_curl)\lib</sdk_curl_lib>
+    <sdk_curl_bin>$(sdk_curl)\bin</sdk_curl_bin>
+    <sdk_mongoc>$(CppSdkEnv)\mongo-c-driver\1.17.0\$(sdk_platform_path)</sdk_mongoc>
+    <sdk_mongoc_include>$(sdK_mongoc)\include\libmongoc-1.0</sdk_mongoc_include>
+    <sdk_mongoc_lib>$(sdk_mongoc)\lib</sdk_mongoc_lib>
+    <sdk_mongoc_bin>$(sdk_mongoc)\bin</sdk_mongoc_bin>
+    <sdk_bson>$(sdk_mongoc)</sdk_bson>
+    <sdk_bson_include>$(sdk_bson)\include\libbson-1.0</sdk_bson_include>
+    <sdk_bson_lib>$(sdk_bson)\lib</sdk_bson_lib>
+    <sdk_bson_bin>$(sdk_bson)\bin</sdk_bson_bin>
+    <sdk_mongocxx>$(CppSdkEnv)\mongo-cxx-driver\r3.4.0\$(sdk_platform_path)</sdk_mongocxx>
+    <sdk_mongocxx_include>$(sdk_mongocxx)\include\mongocxx\v_noabi</sdk_mongocxx_include>
+    <sdk_mongocxx_lib>$(sdk_mongocxx)lib</sdk_mongocxx_lib>
+    <sdk_mongocxx_bin>$(sdk_mongocxx)\bin</sdk_mongocxx_bin>
+    <sdk_bsoncxx>$(sdk_mongocxx)</sdk_bsoncxx>
+    <sdk_bsoncxx_include>$(sdk_bsoncxx)\include\bsoncxx\v_noabi</sdk_bsoncxx_include>
+    <sdk_bsoncxx_lib>$(sdk_bsoncxx)\lib</sdk_bsoncxx_lib>
+    <sdk_bsoncxx_bin>$(sdk_bsoncxx)\bin</sdk_bsoncxx_bin>
+    <sdk_openssl>$(CppSdkEnv)\OpenSSL\v1.1.1g\$(PlatformTarget)</sdk_openssl>
+    <sdk_openssl_include>$(sdk_openssl)\include</sdk_openssl_include>
+    <sdk_openssl_lib>$(sdk_openssl)\lib</sdk_openssl_lib>
+    <sdk_openssl_bin>$(sdk_openssl)\bin</sdk_openssl_bin>
+    <sdk_libevent>$(CppSdkEnv)\libevent\2.1.12\$(OSTarget)\$(PlatformTarget)</sdk_libevent>
+    <sdk_libevent_include>$(sdk_libevent)\include</sdk_libevent_include>
+    <sdk_libevent_lib>$(sdk_libevent)\lib</sdk_libevent_lib>
+    <sdk_libevent_bin>$(sdk_libevent)\lib</sdk_libevent_bin>
+    <sdk_msgpack>$(CppSdkEnv)\msgpack\3.3.0\$(OSTarget)\$(PlatformTarget)</sdk_msgpack>
+    <sdk_msgpack_include>$(sdk_msgpack)\include</sdk_msgpack_include>
+    <sdk_msgpack_lib>$(sdk_msgpack)\lib</sdk_msgpack_lib>
+    <sdk_msgpack_bin>$(sdk_msgpack)\bin</sdk_msgpack_bin>
+    <sdk_boost>$(CppSdkEnv)\boost_1_71_0</sdk_boost>
+    <sdk_boost_include>$(sdk_boost)</sdk_boost_include>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="sdk_lua">
+      <Value>$(sdk_lua)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_lua_include">
+      <Value>$(sdk_lua_include)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_lua_lib">
+      <Value>$(sdk_lua_lib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_lua_bin">
+      <Value>$(sdk_lua_bin)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_nlohmann_json">
+      <Value>$(sdk_nlohmann_json)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_rapidxml">
+      <Value>$(sdk_rapidxml)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_rapidxml_include">
+      <Value>$(sdk_rapidxml_include)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_curl">
+      <Value>$(sdk_curl)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_curl_include">
+      <Value>$(sdk_curl_include)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_curl_lib">
+      <Value>$(sdk_curl_lib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_curl_bin">
+      <Value>$(sdk_curl_bin)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_mongoc">
+      <Value>$(sdk_mongoc)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_mongoc_include">
+      <Value>$(sdk_mongoc_include)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_mongoc_lib">
+      <Value>$(sdk_mongoc_lib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_mongoc_bin">
+      <Value>$(sdk_mongoc_bin)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_bson">
+      <Value>$(sdk_bson)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_bson_include">
+      <Value>$(sdk_bson_include)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_bson_lib">
+      <Value>$(sdk_bson_lib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_bson_bin">
+      <Value>$(sdk_bson_bin)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_mongocxx">
+      <Value>$(sdk_mongocxx)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_mongocxx_include">
+      <Value>$(sdk_mongocxx_include)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_mongocxx_lib">
+      <Value>$(sdk_mongocxx_lib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_mongocxx_bin">
+      <Value>$(sdk_mongocxx_bin)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_bsoncxx">
+      <Value>$(sdk_bsoncxx)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_bsoncxx_include">
+      <Value>$(sdk_bsoncxx_include)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_bsoncxx_lib">
+      <Value>$(sdk_bsoncxx_lib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_bsoncxx_bin">
+      <Value>$(sdk_bsoncxx_bin)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_openssl">
+      <Value>$(sdk_openssl)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_openssl_include">
+      <Value>$(sdk_openssl_include)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_openssl_lib">
+      <Value>$(sdk_openssl_lib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_openssl_bin">
+      <Value>$(sdk_openssl_bin)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_libevent">
+      <Value>$(sdk_libevent)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_libevent_include">
+      <Value>$(sdk_libevent_include)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_libevent_lib">
+      <Value>$(sdk_libevent_lib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_libevent_bin">
+      <Value>$(sdk_libevent_bin)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_msgpack">
+      <Value>$(sdk_msgpack)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_msgpack_include">
+      <Value>$(sdk_msgpack_include)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_msgpack_lib">
+      <Value>$(sdk_msgpack_lib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_msgpack_bin">
+      <Value>$(sdk_msgpack_bin)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_boost">
+      <Value>$(sdk_boost)</Value>
+    </BuildMacro>
+    <BuildMacro Include="sdk_boost_include">
+      <Value>$(sdk_boost_include)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

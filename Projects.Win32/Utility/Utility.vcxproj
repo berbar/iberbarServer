@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b67bfdb5-fbb3-49b5-997a-1fc70d286a10}</ProjectGuid>
+    <RootNamespace>Utility</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Properties\Envs-Windows.props" />
+    <Import Project="..\..\Properties\Paths.props" />
+    <Import Project="..\..\Properties\Sdk.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Properties\Envs-Windows.props" />
+    <Import Project="..\..\Properties\Paths.props" />
+    <Import Project="..\..\Properties\Sdk.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Properties\Envs-Windows.props" />
+    <Import Project="..\..\Properties\Paths.props" />
+    <Import Project="..\..\Properties\Sdk.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Properties\Envs-Windows.props" />
+    <Import Project="..\..\Properties\Paths.props" />
+    <Import Project="..\..\Properties\Sdk.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(iberbarSrcDir);$(IncludePath)</IncludePath>
+    <OutDir>$(BuildOutputDir)</OutDir>
+    <TargetName>iberbar$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(iberbarSrcDir);$(IncludePath)</IncludePath>
+    <OutDir>$(BuildOutputDir)</OutDir>
+    <TargetName>iberbar$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(iberbarSrcDir);$(IncludePath)</IncludePath>
+    <OutDir>$(BuildOutputDir)</OutDir>
+    <TargetName>iberbar$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(iberbarSrcDir);$(IncludePath)</IncludePath>
+    <OutDir>$(BuildOutputDir)</OutDir>
+    <TargetName>iberbar$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;UTILITY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);__iberbarUtilityApiExport__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;UTILITY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);__iberbarUtilityApiExport__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;UTILITY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);__iberbarUtilityApiExport__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;UTILITY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);__iberbarUtilityApiExport__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\iberbar\Utility\Ascii_6Bit.hpp" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Buffer.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Circle.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Clonable.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Color.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Command.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\DateTime.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\FileHelper.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Log\BaseTypes.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Log\Helper.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Log\OutputDevice.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Log\OutputDeviceFile.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Math.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\MsgQueue.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Platform.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Point.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Rect.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\RectClip2d.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Ref.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\RefStatistics.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Result.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Size.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Stack.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\StdHelper_List.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\StdHelper_Vector.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\String.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\StringConvert.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Variant.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\iberbar\Utility\Color.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Command.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\DateTime.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\FileHelper.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Log\Helper.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Log\OutputDevice.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Log\OutputDeviceFile.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Ref.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\RefStatistics.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Result.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\String.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\StringConvert.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Variant.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Src\iberbar\Utility\Color.inl" />
+    <None Include="..\..\Src\iberbar\Utility\Rect.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

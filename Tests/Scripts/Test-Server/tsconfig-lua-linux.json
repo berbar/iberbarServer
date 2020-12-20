@@ -1,0 +1,5 @@
+{
+    "compilerOptions": {
+        "outDir": "../../Windows/Test.Server/Scripts"
+    }
+}

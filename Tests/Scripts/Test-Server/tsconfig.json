@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "rootDir": "./Src",
+        "baseUrl": "./Src",
+        "paths": {
+            "Mongodb": [
+                "../../../../Scripts/Typescript/Mongodb"
+            ]
+        },
+        "typeRoots": [
+            "./Types",
+            "../../../Scripts/Typescript"
+        ]
+    }
+}

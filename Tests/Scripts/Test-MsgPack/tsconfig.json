@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "rootDir": "./Src",
+        "baseUrl": "./Src",
+        "paths": {
+            "iberbar.MsgPack": [
+                "../../../../Scripts/Typescript/iberbar/MsgPack"
+            ]
+        },
+        "typeRoots": [
+            "./Types",
+            "../../../Scripts/Typescript"
+        ]
+    }
+}

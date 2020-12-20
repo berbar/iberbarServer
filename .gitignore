@@ -1,0 +1,8 @@
+.vs/**
+Bin/**
+**/Debug/**
+**/Release/**
+**/node_modules/**
+**/.vs/**
+**.log
+**/RefZombies.txt

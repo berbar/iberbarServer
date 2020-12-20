@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\iberbar\Utility\Ascii_6Bit.hpp" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Buffer.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Circle.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Clonable.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Color.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Command.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\DateTime.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\FileHelper.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Math.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\MsgQueue.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Platform.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Point.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Rect.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\RectClip2d.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Ref.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\RefStatistics.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Result.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Size.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Stack.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\StdHelper_List.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\StdHelper_Vector.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\String.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\StringConvert.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Variant.h" />
+    <ClInclude Include="..\..\Src\iberbar\Utility\Log\BaseTypes.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\iberbar\Utility\Log\Helper.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\iberbar\Utility\Log\OutputDevice.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\iberbar\Utility\Log\OutputDeviceFile.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\iberbar\Utility\Color.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Command.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\DateTime.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\FileHelper.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\RefStatistics.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Result.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\String.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\StringConvert.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Variant.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Ref.cpp" />
+    <ClCompile Include="..\..\Src\iberbar\Utility\Log\Helper.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\iberbar\Utility\Log\OutputDevice.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\iberbar\Utility\Log\OutputDeviceFile.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Src\iberbar\Utility\Color.inl" />
+    <None Include="..\..\Src\iberbar\Utility\Rect.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Log">
+      <UniqueIdentifier>{d51a2a67-64db-4ad6-83f3-15f228833a26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

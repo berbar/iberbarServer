@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "rootDir": "./Src",
+        "baseUrl": "./Src",
+        "paths": {
+            "iberbar.Mongodb": [
+                "../../../../Scripts/Typescript/iberbar/Mongodb"
+            ]
+        },
+        "typeRoots": [
+            "./Types",
+            "../../../Scripts/Typescript"
+        ]
+    }
+}

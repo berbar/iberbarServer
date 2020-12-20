@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "tstl 构建 Test-Mongodb",
+            "type": "shell",
+            "command": "../../../Autobuild/node_modules/.bin/tstl --project ./tsconfig-lua-windows.json --watch"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "Libs",
+			"path": "..\\Scripts\\Typescript"
+		},
+		{
+			"name": "Test-MsgPack",
+			"path": "Scripts\\Test-MsgPack"
+		},
+		{
+			"name": "Test-MsgPack-LuaBuild",
+			"path": "Windows\\Test-MsgPack\\Scripts"
+		},
+		{
+			"name": "Test-Mongodb",
+			"path": "Scripts\\Test-Mongodb"
+		},
+		{
+			"name": "Test-Mongodb-LuaBuild",
+			"path": "Windows\\Test-Mongodb\\Scripts"
+		},
+		{
+			"name": "Test-Server",
+			"path": "Scripts\\Test-Server"
+		}
+	],
+	"settings": {}
+}
